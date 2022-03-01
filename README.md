@@ -39,4 +39,25 @@ Please check out the dashboard at https://public.tableau.com/views/NBADashboard_
 **Step 4: Perform SQL Queries for Data Visualization**
 ---
 * [queries_for_visualization.sql](https://github.com/RonaldLi-GitHub/NBA_Data_Visualization/blob/main/queries_for_visualization.sql) contains the queries used for the Tableau dashboard
-* 
+* Query 1: Display statistics for each game for seasons 1979 to 2019
+  * This generates the average game statistics for each season, such as average ast/reb/pts per game
+* Query 2: Display win/loss statistics for each game for seasons 1979 to 2019
+  * This generates win/loss record for each team, but this table makes a distinct between which team is the home team and which is the visitor team
+* Query 3: Display team-level vs. other teams. for seasons 1979 to 2019
+  * This generates win/loss record for each team, but this table contains aggregate results that combine home/visitor position. The user can select any one team and another team to see their win/loss history for any given season
+* Query 4: Create view to display team-level statistics for seasons 1979 to 2019
+  * This creates the view that will be used in Query 5. This contains team-level statistics regardless of home/visitor position
+* Query 5: Display win streak for seasons 1979 to 2019
+  * This returns the longest winning streak for each team and each season. A winning streak is the number of consecutive wins until the first loss. Season end will reset the streak. Thus, if the last game is a win, it will still count towards a streak
+* Query 6: Display player-level statistics for seasons 1979 to 2019, include triple double
+  * This generates player-level statistics for each game and each season
+
+**Step 5: Upload all Query Results to Tableau Public for Dashboard**
+---
+* The user is able to visualize the following
+  * Win/loss record for any two teams and for any season (can select multiple seasons)
+  * Average game statistics per season 
+  * Win/loss record for each team for any season
+  * Longest winning streak for each team for any season
+  * Top 10 players for each season in total ast/reb/pts, average ast/reb/pts, number of triple double
+
