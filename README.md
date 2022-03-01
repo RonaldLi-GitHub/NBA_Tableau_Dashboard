@@ -22,4 +22,4 @@ Please check out the dashboard at https://public.tableau.com/views/NBADashboard_
 * [create_tables.py](https://github.com/RonaldLi-GitHub/NBA_Data_Visualization/blob/main/create_tables.py) contains the code for this section
 * For this project, I create a PostgreSQL Database locally using pgAdmin 4. After creating the database, I recorded the hostname/database/username/port_id
 * I create a table for each of Players/Teams/Games/Stats, each with its primary id and/or foreign id
-* The ERM diagram is the following
+* The ERD diagram is the following
