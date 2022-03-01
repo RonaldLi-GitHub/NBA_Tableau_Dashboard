@@ -17,3 +17,9 @@ Please check out the dashboard at https://public.tableau.com/views/NBADashboard_
   * Stats-all stats for all games with one record per stat per player, each record contains stat id, player id, team id, game id, ast, reb, pts and other stats
 * Each section of data is stored in a dataframe. Player, Team, Game data are exported to csv files. Stat is exported to a pickle file due to its size
 
+**Step 2: Set up PostgreSQL Database and Create Tables**
+---
+* [create_tables.py](https://github.com/RonaldLi-GitHub/NBA_Data_Visualization/blob/main/create_tables.py) contains the code for this section
+* For this project, I create a PostgreSQL Database locally using pgAdmin 4. After creating the database, I recorded the hostname/database/username/port_id
+* I create a table for each of Players/Teams/Games/Stats, each with its primary id and/or foreign id
+* The ERM diagram is the following
