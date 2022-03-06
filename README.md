@@ -1,4 +1,4 @@
-# NBA Data Visualization
+# NBA Tableau Dashboard
 
 **Summary**
 ---
